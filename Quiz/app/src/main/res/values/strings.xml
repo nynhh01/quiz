@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="luat_choi">Chào mừng bạn đến với trò chơi GoQuiz.\n
+        Trong trò chơi này, bạn trả lời câu hỏi theo các chủ đề: Lích sử, Địa lý, Khoa học, Nghệ thuật,...\n
+        Bạn có thể trả lời các câu hỏi ở 2 cấp độ là dễ và khó.\n
+        Thành tích của bạn giữa các lần chơi sẽ được lưu lại.</string>
+</resources>
