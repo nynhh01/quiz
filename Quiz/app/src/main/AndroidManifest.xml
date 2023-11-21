@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Quiz"
         tools:targetApi="31">
         <activity
+            android:name=".Frame3"
+            android:exported="false" />
+        <activity
             android:name=".Frame2"
             android:exported="false" />
         <activity
