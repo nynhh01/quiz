@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">Quiz</string>
-    <string name="luat_choi">Chào mừng bạn đến với trò chơi GoQuiz.\n
-        Trong trò chơi này, bạn trả lời câu hỏi theo các chủ đề: Lích sử, Địa lý, Khoa học, Nghệ thuật,...\n
-        Bạn có thể trả lời các câu hỏi ở 2 cấp độ là dễ và khó.\n
-        Thành tích của bạn giữa các lần chơi sẽ được lưu lại.</string>
+    <string name="intro">
+        Chào mừng bạn đến với trò chơi GoQuiz \n
+        Quizizz là một nền tảng trực tuyến cho phép giáo viên tạo và tổ chức các bài kiểm tra, trò chơi trực tuyến và hoạt động học tập tương tác cho học sinh. Nền tảng này được thiết kế để làm cho việc học trở nên thú vị và hấp dẫn bằng cách sử dụng các câu hỏi trắc nghiệm, câu hỏi trả lời đúng/sai và câu hỏi ngắn cho học sinh tham gia.
+
+Các giáo viên có thể tạo các bài kiểm tra và hoạt động tương tác trên Quizizz hoặc tìm kiếm trong thư viện công cộng của nền tảng để sử dụng các tài liệu đã được tạo sẵn. Sau khi tạo hoặc chọn một bài kiểm tra, giáo viên có thể chia sẻ mã trò chơi với học sinh để họ tham gia trực tuyến từ các thiết bị của mình.
+
+Học sinh sau đó có thể truy cập Quizizz bằng mã trò chơi và tham gia vào trò chơi trực tuyến. Họ sẽ nhận được điểm số và phản hồi tức thì sau mỗi câu hỏi, giúp tăng khả năng tham gia và tạo sự cạnh tranh lành mạnh giữa các học sinh.
+
+Quizizz mang lại sự linh hoạt cho việc học tập, cho phép giáo viên tạo các bài kiểm tra tùy chỉnh và tùy chỉnh thời gian, cấu trúc và các yếu tố khác của hoạt động. Nền tảng cũng cung cấp dữ liệu phân tích sau bài kiểm tra, giúp giáo viên hiểu rõ hơn về tiến độ và hiệu suất học tập của học sinh.
+    </string>
 </resources>

@@ -5,34 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
     tools:context=".MainActivity">
+
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
             android:text="GoQuiz"
-            android:textAlignment="center"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView2"
+            android:textSize="60sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            />
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_weight="6"
-            android:text="@string/luat_choi"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="107dp"
-            android:layout_height="0dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:text="Start" /></LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:orientation="vertical"
+                    >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/intro"
+                            android:textSize="20dp"
+                            android:layout_marginBottom="30dp"
+                            android:textColor="#000"
+                            />
+                        <Button
+                            android:id="@+id/start"
+                            android:layout_width="200dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="30dp"
+                            android:backgroundTint="#6750a4"
+                            android:layout_weight="1"
+                            android:text="start"
+                            android:textSize="20dp"
+                            android:textColor="#fff"
+                            android:layout_gravity="center"
+                            />
+
+                </LinearLayout>
+        </ScrollView>
+</LinearLayout>
+
