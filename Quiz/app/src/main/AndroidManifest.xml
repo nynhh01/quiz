@@ -12,15 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz"
         tools:targetApi="31">
+
         <activity
-            android:name=".Frame3"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Frame2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".Frame3"
+            android:exported="false"/>
+            <activity
+                android:name=".Frame4"
+                android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

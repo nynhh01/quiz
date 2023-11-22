@@ -15,13 +15,18 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:maxLines="3"
         android:textSize="30sp"
+        android:layout_marginTop="50dp"
         android:gravity="center_horizontal"
-        android:text="TextView" />
+        android:text="Khảo sát mạch tạo dao động đa hài đợi trong sơ đồ A8-3. " />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="70dp"
         android:layout_weight="4">
 
         <RadioButton
@@ -52,7 +57,7 @@
 
     <Button
         android:id="@+id/btnCheck3"
-        android:layout_width="168dp"
+        android:layout_width="120dp"
         android:layout_height="0dp"
         android:layout_gravity="center"
         android:layout_weight="1"
