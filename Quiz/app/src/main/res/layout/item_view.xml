@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fef7ff"
+    >
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/dia_li" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa lí"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/pr_name"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Các câu hour về các vùng đất, địa hình, dân cư và các hiện tượng trên Trái Dất"
+            android:paddingTop="7dp"
+            android:textSize="18sp"
+            android:maxLines="3"
+            android:id="@+id/pr_des"/>
+    </LinearLayout>
+
+</LinearLayout>

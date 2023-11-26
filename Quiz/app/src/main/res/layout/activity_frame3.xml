@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    android:layout_marginStart="30dp"
-    android:layout_marginEnd="30dp"
+    android:padding="30dp"
+    android:background="#f7f2fa"
     tools:context=".Frame3">
 
     <TextView
@@ -17,7 +17,6 @@
         android:layout_weight="2"
         android:textColor="#000"
         android:textStyle="bold"
-        android:maxLines="3"
         android:textSize="30sp"
         android:layout_marginTop="50dp"
         android:gravity="center_horizontal"

@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    android:layout_marginStart="30dp"
-    android:layout_marginEnd="30dp"
+    android:padding="30dp"
+    android:background="#f7f2fa"
     tools:context=".Frame4">
 
     <TextView
@@ -17,7 +17,7 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="90dp"
         />
     <TextView
         android:id="@+id/trueAnswer"
@@ -49,7 +49,7 @@
             android:layout_width="107dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="50dp"
             android:text="Chơi lại" />
     </LinearLayout>
 
