@@ -6,40 +6,42 @@ import android.os.Parcelable;
 import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class Question implements Parcelable {
+public class Question {
     String id;
     String question;
     ArrayList<String> answers;
     int key;
-    Level level;
-
-    public Question(String id, String question, ArrayList<String> answers, int key, Level level) {
+    int level;
+    int theme;
+    public Question(){
+        this.id = "";
+        this.question = "";
+        this.answers.add("");
+        this.answers.add("");
+        this.answers.add("");
+        this.answers.add("");
+        this.key = 0;
+        this.level = 0;
+        this.theme = 0;
+    }
+    public Question(String id, String question, ArrayList<String> answers, int key, int level, int theme) {
         this.id = id;
         this.question = question;
         this.answers = answers;
         this.key = key;
         this.level = level;
+        this.theme = theme;
     }
-
-    protected Question(Parcel in) {
-        id = in.readString();
-        question = in.readString();
-        answers = in.createStringArrayList();
-        key = in.readInt();
+    public Question(String id, String question, String[] answers, int key, int level, int theme) {
+        this.id = id;
+        this.question = question;
+        this.answers = new ArrayList<>(Arrays.asList(answers));
+        this.key = key;
+        this.level = level;
+        this.theme = theme;
     }
-
-    public static final Creator<Question> CREATOR = new Creator<Question>() {
-        @Override
-        public Question createFromParcel(Parcel in) {
-            return new Question(in);
-        }
-
-        @Override
-        public Question[] newArray(int size) {
-            return new Question[size];
-        }
-    };
 
     public String getId() {
         return id;
@@ -75,28 +77,14 @@ public class Question implements Parcelable {
         this.key = key;
     }
 
-    public Level getLevel() {
+    public int getLevel() {
         return level;
     }
 
-    public void setLevel(Level level) {
+    public void setLevel(int level) {
         this.level = level;
     }
     public  Boolean checkAnswer(int value){
         return value == key;
-    }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(@NonNull Parcel dest, int flags) {
-        dest.writeString(id);
-        dest.writeString(question);
-        dest.writeArray(answers.toArray());
-        dest.writeInt(key);
-        dest.writeValue(level);
     }
 }

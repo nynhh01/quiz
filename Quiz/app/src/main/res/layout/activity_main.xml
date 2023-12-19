@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
         <TextView
+            android:id="@+id/F1txtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="GoQuiz"
@@ -31,6 +32,7 @@
                     android:orientation="vertical"
                     >
                         <TextView
+                            android:id="@+id/F1txtInformation"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="@string/intro"
@@ -39,7 +41,7 @@
                             android:textColor="#000"
                             />
                         <Button
-                            android:id="@+id/bntStart"
+                            android:id="@+id/F1bntStart"
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
                             android:layout_marginTop="20dp"

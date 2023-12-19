@@ -11,7 +11,7 @@
     tools:context=".Frame6">
 
     <TextView
-        android:id="@+id/txtQuestion3"
+        android:id="@+id/F6txtQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -22,20 +22,58 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnCheck3"
+        android:id="@+id/F6btnLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#f05c5c"
+        android:backgroundTint="#00BCD4"
+        android:clickable="false"
         android:text="Khó" />
 
-    <ListView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:id="@+id/list_answer"
+        android:orientation="vertical"
+        android:weightSum="100"
         >
-    </ListView>
+        <TextView
+            android:id="@+id/F6txtAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:text="Cau tra loi 1"
+            android:textSize="24sp"
+            android:layout_marginTop="10sp">
+        </TextView>
+        <TextView
+            android:id="@+id/F6txtAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:text="Cau tra loi 1"
+            android:textSize="24sp"
+            android:layout_marginTop="10sp">
+        </TextView>
+        <TextView
+            android:id="@+id/F6txtAnswer3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:text="Cau tra loi 1"
+            android:textSize="24sp"
+            android:layout_marginTop="10sp">
+        </TextView>
+        <TextView
+            android:id="@+id/F6txtAnswer4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:text="Cau tra loi 1"
+            android:textSize="24sp"
+            android:layout_marginTop="10sp">
+        </TextView>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,13 +87,12 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-
             android:text="Đáp án đúng: "
             android:textColor="#000"
             android:textSize="25sp"
             android:textStyle="bold" />
         <TextView
+            android:id="@+id/F6txtKey"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="isopropyl propionat"

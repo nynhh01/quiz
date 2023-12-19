@@ -53,4 +53,10 @@ public class Theme {
     public void setQuestions(ArrayList<Question> questions) {
         this.questions = questions;
     }
+    public void addQuestion(Question x){
+        for(Question i : questions)
+            if(i.id == x.id)
+                return;
+        questions.add(x);
+    }
 }

@@ -11,7 +11,7 @@
     tools:context=".Frame2">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/F2txtV1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.5"
@@ -21,7 +21,7 @@
         android:text="Total Score"
         android:textStyle="bold"/>
     <TextView
-        android:id="@+id/txtTotalScore"
+        android:id="@+id/F2txtTotalScore"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.5"
@@ -29,18 +29,17 @@
         android:gravity="center_horizontal"
         android:text="200 pts"
         android:textStyle="bold"/>
+
     <ListView
+        android:id="@+id/F2list_subject"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="12"
-        android:layout_marginEnd="20sp"
         android:layout_marginStart="20sp"
-        android:id="@+id/list_subject"
-        >
-    </ListView>
+        android:layout_marginEnd="20sp"
+        android:layout_weight="12"></ListView>
 
     <com.google.android.material.switchmaterial.SwitchMaterial
-        android:id="@+id/swCDK"
+        android:id="@+id/F2swCDK"
         android:layout_width="215dp"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
@@ -52,7 +51,7 @@
 
     <Button
         android:layout_marginTop="60dp"
-        android:id="@+id/btnNext2"
+        android:id="@+id/F2btnNext"
         android:layout_width="187dp"
         android:layout_height="0dp"
         android:layout_weight="1.5"

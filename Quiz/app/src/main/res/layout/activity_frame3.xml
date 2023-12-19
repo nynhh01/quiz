@@ -11,7 +11,7 @@
     tools:context=".Frame3">
 
     <TextView
-        android:id="@+id/txtQuestion3"
+        android:id="@+id/F3txtQuestion"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -23,31 +23,32 @@
         android:text="Khảo sát mạch tạo dao động đa hài đợi trong sơ đồ A8-3. " />
 
     <RadioGroup
+        android:id="@+id/F3rdiGroup"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="70dp"
         android:layout_weight="4">
 
         <RadioButton
-            android:id="@+id/rdi31"
+            android:id="@+id/F3rdi1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RadioButton" />
 
         <RadioButton
-            android:id="@+id/rdi32"
+            android:id="@+id/F3rdi2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RadioButton" />
 
         <RadioButton
-            android:id="@+id/rdi313"
+            android:id="@+id/F3rdi3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RadioButton" />
 
         <RadioButton
-            android:id="@+id/rdi34"
+            android:id="@+id/F3rdi4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RadioButton" />
@@ -55,7 +56,7 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/btnCheck3"
+        android:id="@+id/F3btnCheck"
         android:layout_width="120dp"
         android:layout_height="0dp"
         android:layout_gravity="center"
