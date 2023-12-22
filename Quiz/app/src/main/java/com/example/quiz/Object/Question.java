@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Question {
     String id;
@@ -84,7 +85,13 @@ public class Question {
     public void setLevel(int level) {
         this.level = level;
     }
+    public int getTheme(){return theme;}
     public  Boolean checkAnswer(int value){
         return value == key;
+    }
+    public void randomAnswer(){
+        String stringResult = answers.get(key);
+        Collections.shuffle(answers);
+        key = answers.indexOf(stringResult);
     }
 }

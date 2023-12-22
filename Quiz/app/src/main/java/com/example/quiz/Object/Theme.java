@@ -9,12 +9,12 @@ public class Theme {
     String information;
     ArrayList<Question> questions;
 
-    public Theme(String id, int picture, String name, String information, ArrayList<Question> questions) {
+    public Theme(String id, int picture, String name, String information) {
         this.id = id;
         this.picture = picture;
         this.name = name;
         this.information = information;
-        this.questions = questions;
+        this.questions = new ArrayList<>();
     }
 
     public String getId() {
@@ -37,7 +37,6 @@ public class Theme {
     public void setName(String name) {
         this.name = name;
     }
-
     public String getInformation() {
         return information;
     }

@@ -13,7 +13,9 @@ import java.util.ArrayList;
 
 public class ThemeAdapter  extends BaseAdapter {
     ArrayList<Theme> themes;
-
+    public ThemeAdapter(ArrayList<Theme> themes){
+        this.themes = themes;
+    }
     @Override
     public int getCount() {
         return themes.size();
