@@ -1,5 +1,7 @@
 package com.example.quiz.Object;
 
+import android.widget.Toast;
+
 import com.example.quiz.R;
 
 import java.util.ArrayList;
@@ -9,9 +11,13 @@ public class Data {
     static ArrayList<Question> listQuestion;
     static ArrayList<Theme> listTheme;
     static int numberTheme;
+    static int totalScore;
+    static int start = 0;
 
     public static void InitQuestions(){
-        listQuestion = new ArrayList<>();
+        if(start == 1) return;
+        start = 1;
+        listQuestion = new ArrayList<Question>();
 
         // Dia ly
         int id = 0;
@@ -153,11 +159,12 @@ public class Data {
             listQuestion.add(new Question(NewId("TA", id++), "Who painted the famous artwork 'The Starry Night'?",
                     new String[]{"Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"}, 0, 1, theme));
         }
-        numberTheme = theme;
+        numberTheme = theme + 1;
         InitTheme();
+        totalScore = 0;
     }
     static void InitTheme(){
-        listTheme = new ArrayList<>();
+        listTheme = new ArrayList<Theme>();
         int[] idPictures = {R.drawable.img_dia_ly, R.drawable.img_khoa_hoc, R.drawable.img_lich_su, R.drawable.img_tieng_anh};
         String[] nameTheme = {"Địa lý", "Khoa học", "Lịch sử", "Tiếng Anh"};
         String[] informationsTheme = {
@@ -169,8 +176,8 @@ public class Data {
         for(int i = 0; i < numberTheme; i++){
             listTheme.add(new Theme(NewId("ID_THEME", i), idPictures[i], nameTheme[i], informationsTheme[i]));
         }
-        for(Question i : listQuestion){
-            listTheme.get(i.getTheme()).addQuestion(i);
+        for(int i =0; i< listQuestion.size(); i++){
+            listTheme.get(listQuestion.get(i).getTheme()).addQuestion(listQuestion.get(i));
         }
     }
     public static ArrayList<Question> getQuestion(int type, int lv){
@@ -188,4 +195,7 @@ public class Data {
     static String NewId(String key, int id){
         return "{}{:03d}".format(key, id);
     }
+    public static ArrayList<Theme> getListTheme(){return listTheme;}
+    public static int getTotalScore(){return totalScore;}
+    public static void setTotalScore(int value){totalScore = value;}
 }

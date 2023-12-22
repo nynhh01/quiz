@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
+    android:weightSum="100"
     android:padding="30dp"
     android:background="#f7f2fa"
     tools:context=".Frame4">
 
     <TextView
+        android:id="@+id/F4txt1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
         android:text="Số câu trả lời đúng"
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="20dp"
         />
     <TextView
         android:id="@+id/F4txtScore"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="30"
         android:text="12"
         android:textColor="#0038ff"
         android:textSize="100sp"
@@ -35,6 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:gravity="center"
         android:orientation="horizontal"
         >
 
@@ -58,9 +61,10 @@
     <Button
         android:id="@+id/F4btnShare"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="15"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:text="Chia sẻ thành tích" />
 
 

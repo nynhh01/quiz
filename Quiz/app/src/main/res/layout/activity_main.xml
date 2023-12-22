@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#f7f2fa"
+    android:weightSum="100"
     tools:context=".MainActivity">
 
         <TextView
@@ -17,43 +17,43 @@
             android:textColor="#000"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginTop="70dp"
-            />
+            android:layout_weight="10"
+            android:layout_marginTop="70dp" />
+
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
             android:layout_marginTop="30dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="30dp"
-                    android:paddingRight="30dp"
+                    android:layout_height="match_parent"
                     android:orientation="vertical"
-                    >
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
                         <TextView
                             android:id="@+id/F1txtInformation"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="@string/intro"
-                            android:textSize="20dp"
+                            android:layout_height="wrap_content"
                             android:layout_marginBottom="30dp"
+                            android:text="@string/intro"
                             android:textColor="#000"
-                            />
+                            android:textSize="20sp" />
+
                         <Button
                             android:id="@+id/F1bntStart"
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
+                            android:layout_gravity="center"
                             android:layout_marginTop="20dp"
                             android:layout_marginBottom="30dp"
-                            android:backgroundTint="#6750a4"
+                            android:background="#6750a4"
                             android:text="Start"
-                            android:textSize="20dp"
                             android:textColor="#fff"
-                            android:layout_gravity="center"
-                            />
+                            android:textSize="20sp" />
 
                 </LinearLayout>
         </ScrollView>
 </LinearLayout>
-

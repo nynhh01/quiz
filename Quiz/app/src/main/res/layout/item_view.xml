@@ -4,6 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:padding="16dp"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#fef7ff"
@@ -13,7 +14,7 @@
         android:id="@+id/imgTheme"
         android:layout_width="100dp"
         android:layout_height="70dp"
-        android:src="@drawable/dia_li" />
+        android:src="@drawable/img_dia_ly" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.quiz.Object.Data;
 import com.example.quiz.Object.Setting;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SetSize();
+        Data.InitQuestions();
         findViewById(R.id.F1bntStart).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
