@@ -8,7 +8,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 import android.graphics.Color;
+import android.widget.Toast;
 
+import com.example.quiz.Object.Data;
 import com.example.quiz.Object.Question;
 
 public class Frame6 extends AppCompatActivity {
@@ -21,9 +23,14 @@ public class Frame6 extends AppCompatActivity {
         setContentView(R.layout.activity_frame6);
         Intent intent = getIntent();
 
+        q = Data.findQuestion(intent.getStringExtra(Frame5.KEY_F5));
+        if(q == null){
+            Toast.makeText(Frame6.this, intent.getStringExtra(Frame5.KEY_F5), Toast.LENGTH_LONG).show();
+            return;
+        }
         ((TextView)findViewById(R.id.F6txtQuestion)).setText(q.getQuestion());
         for(int i=0; i<4; i++){
-            ((CheckBox)findViewById(keyCodeAnswers[i])).setText(q.getAnswer(i));
+            ((TextView)findViewById(keyCodeAnswers[i])).setText(q.getAnswer(i));
         }
         ((TextView)findViewById(R.id.F6txtKey)).setText(q.getAnswer(q.getKey()));
         if(q.getLevel() == 0){

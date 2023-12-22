@@ -17,7 +17,7 @@
             android:name=".Frame6"
             android:exported="false" />
         <activity
-            android:name=".Frame5"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Frame4"
@@ -30,7 +30,7 @@
             android:exported="false"/>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".Frame5"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

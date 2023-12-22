@@ -192,8 +192,20 @@ public class Data {
         Collections.shuffle(result);
         return result;
     }
-    static String NewId(String key, int id){
-        return "{}{:03d}".format(key, id);
+    public static ArrayList<Question> getQuestion(){
+        return listQuestion;
+    }
+    public static ArrayList<Question> getQuestion(int type){
+        return listTheme.get(type).getQuestions();
+    }
+    public static Question findQuestion(String id){
+        for(int i = 0; i<listQuestion.size(); i++)
+            if(listQuestion.get(i).getId().equals(id))
+                return listQuestion.get(i);
+        return null;
+    }
+    static String NewId(String key, int id) {
+        return String.format("%s%03d", key, id);
     }
     public static ArrayList<Theme> getListTheme(){return listTheme;}
     public static int getTotalScore(){return totalScore;}
