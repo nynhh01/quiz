@@ -16,7 +16,6 @@
         android:layout_height="0dp"
         android:layout_weight="15"
         android:orientation="horizontal"
-        android:weightSum="100"
         >
         <TextView
             android:id="@+id/F5txt1"
@@ -25,7 +24,7 @@
             android:text="Chủ đề"
             android:layout_weight="30"
             android:layout_marginRight="10dp"
-            android:textSize="27sp"
+            android:textSize="25sp"
             android:textColor="#000"
 
             />
@@ -47,7 +46,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="70"
+        android:layout_weight="80"
         android:id="@+id/F5list_question"
         android:layout_marginTop="40dp"
         >

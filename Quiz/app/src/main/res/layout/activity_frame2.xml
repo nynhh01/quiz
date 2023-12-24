@@ -35,14 +35,14 @@
         android:layout_height="0dp"
         android:layout_marginStart="20sp"
         android:layout_marginEnd="20sp"
-        android:layout_weight="60"></ListView>
+        android:layout_weight="55"></ListView>
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/F2swCDK"
         android:layout_width="215dp"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
-        android:layout_weight="10"
+        android:layout_weight="15"
         android:text="Cấp độ khó"
         android:textSize="25sp"
         android:textStyle="bold"></com.google.android.material.switchmaterial.SwitchMaterial>
@@ -50,10 +50,11 @@
 
     <Button
         android:id="@+id/F2btnNext"
-        android:layout_width="220dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="10"
+        android:layout_weight="7"
         android:text="Danh sách câu hỏi"
+
         android:textSize="16sp" />
 
 </LinearLayout>

@@ -49,10 +49,10 @@
                             android:layout_gravity="center"
                             android:layout_marginTop="20dp"
                             android:layout_marginBottom="30dp"
-                            android:background="#6750a4"
                             android:text="Start"
                             android:textColor="#fff"
                             android:textSize="20sp" />
+
 
                 </LinearLayout>
         </ScrollView>
