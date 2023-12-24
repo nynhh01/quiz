@@ -36,7 +36,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_weight="30"
         android:orientation="horizontal"
         >
 
@@ -44,15 +46,15 @@
             android:id="@+id/F4btnF1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_marginLeft="10dp"
             android:text="Hoàn thành" />
 
         <Button
             android:id="@+id/F4btnF3"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_marginLeft="30dp"
             android:text="Chơi lại" />
     </LinearLayout>
