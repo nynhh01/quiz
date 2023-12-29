@@ -51,14 +51,14 @@ public class Frame3 extends AppCompatActivity {
                         }
                     if (index == q.getKey()) {
                         score += (lv + 1);
-                        if(!NewQuestion()){
+                        if(!NewQuestion()){ // hết câu hỏi
                             NextFrame4();
                             //((RadioGroup) findViewById(R.id.F3rdiGroup)).clearCheck();
                         }
                         //((RadioButton)findViewById(keyCodeAnswers[0])).setChecked(false);
 
                         //Toast.makeText(Frame3.this, "Dung", Toast.LENGTH_LONG).show();
-                    } else {
+                    } else { // TL sai
                         NextFrame4();
                         //Toast.makeText(Frame3.this, "Sai", Toast.LENGTH_LONG).show();
                     }
@@ -70,15 +70,16 @@ public class Frame3 extends AppCompatActivity {
     }
     Boolean NewQuestion(){
         if(questions.size() == 0) return false;
+        // lấy phần tử đầu tiên
         q = questions.get(0);
         questions.remove(0);
         ((TextView)findViewById(R.id.F3txtQuestion)).setText(q.getQuestion());
         for(int i=0; i<4; i++) {
             RadioButton radioButton = findViewById(keyCodeAnswers[i]);
             radioButton.setText(q.getAnswer(i));
-            //radioButton.setChecked(false);
+            radioButton.setChecked(false);
         }
-        ((RadioButton)findViewById(keyCodeAnswers[0])).setChecked(true);
+        //((RadioButton)findViewById(keyCodeAnswers[0])).setChecked(true);
 
         return true;
     }

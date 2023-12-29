@@ -28,7 +28,7 @@ public class Frame4 extends AppCompatActivity {
         Intent intent = getIntent();
         score = intent.getIntExtra(Frame3.KEY_CODE_SCORE, 0);
         ((TextView)findViewById(R.id.F4txtScore)).setText(score + "");
-
+        // cập nhật điểm
         Data.setTotalScore(intent.getIntExtra(Frame3.KEY_CODE_SCORE, 0) + Data.getTotalScore());
         findViewById(R.id.F4btnF1).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +42,7 @@ public class Frame4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(Frame4.this, Frame3.class);
+                // truyền lại lv và theme
                 intent2.putExtra(Frame2.KEY_F2_LV, getIntent().getIntExtra(Frame2.KEY_F2_LV, 0));
                 intent2.putExtra(Frame2.KEY_F2_THEME, getIntent().getIntExtra(Frame2.KEY_F2_THEME, 0));
                 startActivity(intent2);
@@ -51,6 +52,7 @@ public class Frame4 extends AppCompatActivity {
         findViewById(R.id.F4btnShare).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
                 shareIntent.putExtra(Intent.EXTRA_TEXT, "Điểm số của bạn là " + score);

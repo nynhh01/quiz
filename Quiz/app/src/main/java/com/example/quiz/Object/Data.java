@@ -14,6 +14,7 @@ public class Data {
     static int totalScore;
     static int start = 0;
     public static void InitQuestions() {
+        totalScore = 0;
         InitQuestions(0); // Gọi phương thức với giá trị mặc định là 0
     }
     public static void InitQuestions(int type){
@@ -163,7 +164,6 @@ public class Data {
         }
         numberTheme = theme + 1;
         InitTheme();
-        totalScore = 0;
     }
     static void InitTheme(){
         listTheme = new ArrayList<Theme>();
@@ -182,6 +182,7 @@ public class Data {
             listTheme.get(listQuestion.get(i).getTheme()).addQuestion(listQuestion.get(i));
         }
     }
+    // lấy ra danh sách câu hỏi theo chủ đề và ramdom
     public static ArrayList<Question> getQuestion(int type, int lv){
         ArrayList<Question> result = new ArrayList<>();
         ArrayList<Question> data = listTheme.get(type).getQuestions();
@@ -208,7 +209,7 @@ public class Data {
     }
     static String NewId(String key, int id) {
         return String.format("%s%03d", key, id);
-    }
+    } // 5 => key + "005"
     public static ArrayList<Theme> getListTheme(){return listTheme;}
     public static int getTotalScore(){return totalScore;}
     public static void setTotalScore(int value){totalScore = value;}

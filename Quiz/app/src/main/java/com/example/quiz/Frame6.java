@@ -22,9 +22,9 @@ public class Frame6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frame6);
         Intent intent = getIntent();
-
+        // tìm câu hỏi theo id mà từ f5 chuyển
         q = Data.findQuestion(intent.getStringExtra(Frame5.KEY_F5));
-        if(q == null){
+        if(q == null){ // check lại lần nữa
             Toast.makeText(Frame6.this, (Data.getQuestion() == null ? "NULL" : Data.getQuestion().size() + ""), Toast.LENGTH_LONG).show();
             Data.InitQuestions(1);
             q = Data.findQuestion(intent.getStringExtra(Frame5.KEY_F5));

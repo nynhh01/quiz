@@ -43,9 +43,9 @@ public class Frame2 extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent2 = new Intent(Frame2.this, Frame3.class);
-                intent2.putExtra(KEY_F2_LV, ((SwitchMaterial)findViewById(R.id.F2swCDK)).isChecked() ? 1 : 0);
-                intent2.putExtra(KEY_F2_THEME, position);
-                Toast.makeText(Frame2.this, Data.getListTheme().get(position).getName() + (((SwitchMaterial)findViewById(R.id.F2swCDK)).isChecked() ? 1 : 0), Toast.LENGTH_LONG).show();
+                intent2.putExtra(KEY_F2_LV, ((SwitchMaterial)findViewById(R.id.F2swCDK)).isChecked() ? 1 : 0); // trả về lv
+                intent2.putExtra(KEY_F2_THEME, position); // trả về thể loại
+                //Toast.makeText(Frame2.this, Data.getListTheme().get(position).getName() + (((SwitchMaterial)findViewById(R.id.F2swCDK)).isChecked() ? 1 : 0), Toast.LENGTH_LONG).show();
                 startActivity(intent2);
             }
         });

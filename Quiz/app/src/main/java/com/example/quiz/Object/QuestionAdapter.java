@@ -13,12 +13,15 @@ import java.util.Collections;
 public class QuestionAdapter extends BaseAdapter {
     ArrayList<Question> questions;
     public QuestionAdapter(ArrayList<Question> x){
-        questions = x;
+        questions = new ArrayList<Question>();
+        for(int i=0; i<x.size(); i++)
+            questions.add(x.get(i));
         Collections.shuffle(questions);
     }
     public void setQuestions(ArrayList<Question> x){
         questions.clear();
-        questions = x;
+        for(int i=0; i<x.size(); i++)
+            questions.add(x.get(i));
         Collections.shuffle(questions);
     }
     public String getID(int i){
