@@ -13,8 +13,12 @@ public class Data {
     static int numberTheme;
     static int totalScore;
     static int start = 0;
-
-    public static void InitQuestions(){
+    public static void InitQuestions() {
+        InitQuestions(0); // Gọi phương thức với giá trị mặc định là 0
+    }
+    public static void InitQuestions(int type){
+        if(start == 1 && type == 0) return;
+        start = 1;
         listQuestion = new ArrayList<Question>();
 
         // Dia ly

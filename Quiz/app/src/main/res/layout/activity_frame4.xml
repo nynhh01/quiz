@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:layout_weight="30"
+        android:layout_weight="20"
         android:orientation="horizontal"
         >
 
@@ -65,7 +65,6 @@
         android:layout_height="0dp"
         android:layout_weight="10"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
         android:text="Chia sẻ thành tích" />
 
 

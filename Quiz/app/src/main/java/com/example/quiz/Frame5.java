@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
@@ -63,8 +64,9 @@ public class Frame5 extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        //Toast.makeText(Frame5.this, "So luong cau hoi: " + Data.getQuestion().size(), Toast.LENGTH_LONG).show();
         if(Data.getQuestion().size() == 0){
-            Data.InitQuestions();
+            Data.InitQuestions(1);
         }
         QuestionAdapter adapter = new QuestionAdapter(Data.getQuestion());
         ListView listView = findViewById(R.id.F5list_question);

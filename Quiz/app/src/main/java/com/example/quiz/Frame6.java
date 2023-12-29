@@ -26,7 +26,7 @@ public class Frame6 extends AppCompatActivity {
         q = Data.findQuestion(intent.getStringExtra(Frame5.KEY_F5));
         if(q == null){
             Toast.makeText(Frame6.this, (Data.getQuestion() == null ? "NULL" : Data.getQuestion().size() + ""), Toast.LENGTH_LONG).show();
-            Data.InitQuestions();
+            Data.InitQuestions(1);
             q = Data.findQuestion(intent.getStringExtra(Frame5.KEY_F5));
             //Toast.makeText(Frame6.this, intent.getStringExtra(Frame5.KEY_F5).toString(), Toast.LENGTH_LONG).show();
             //return;
