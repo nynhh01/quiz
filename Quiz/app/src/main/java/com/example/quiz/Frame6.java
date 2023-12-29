@@ -25,8 +25,11 @@ public class Frame6 extends AppCompatActivity {
 
         q = Data.findQuestion(intent.getStringExtra(Frame5.KEY_F5));
         if(q == null){
-            Toast.makeText(Frame6.this, intent.getStringExtra(Frame5.KEY_F5), Toast.LENGTH_LONG).show();
-            return;
+            Toast.makeText(Frame6.this, (Data.getQuestion() == null ? "NULL" : Data.getQuestion().size() + ""), Toast.LENGTH_LONG).show();
+            Data.InitQuestions();
+            q = Data.findQuestion(intent.getStringExtra(Frame5.KEY_F5));
+            //Toast.makeText(Frame6.this, intent.getStringExtra(Frame5.KEY_F5).toString(), Toast.LENGTH_LONG).show();
+            //return;
         }
         ((TextView)findViewById(R.id.F6txtQuestion)).setText(q.getQuestion());
         for(int i=0; i<4; i++){

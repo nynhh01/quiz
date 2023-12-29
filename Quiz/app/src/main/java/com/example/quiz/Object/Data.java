@@ -15,8 +15,6 @@ public class Data {
     static int start = 0;
 
     public static void InitQuestions(){
-        if(start == 1) return;
-        start = 1;
         listQuestion = new ArrayList<Question>();
 
         // Dia ly

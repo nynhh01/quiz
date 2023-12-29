@@ -28,13 +28,12 @@ public class Frame5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frame5);
-        Data.InitQuestions();
+        //Data.InitQuestions();
         InitName();
 
         textField = findViewById(R.id.F5txtInputField);
         ((MaterialAutoCompleteTextView) textField.getEditText()).setSimpleItems(nameTitles.toArray(new String[nameTitles.size()]));
         MaterialAutoCompleteTextView autoCompleteTextView = (MaterialAutoCompleteTextView) textField.getEditText();
-
         QuestionAdapter adapter = new QuestionAdapter(Data.getQuestion());
         ListView listView = findViewById(R.id.F5list_question);
         listView.setAdapter(adapter);
@@ -56,9 +55,21 @@ public class Frame5 extends AppCompatActivity {
                 String value = ((AutoCompleteTextView) findViewById(R.id.F5txtView2)).getText().toString();
                 int position = nameTitles.indexOf(value);
                 adapter.setQuestions(Data.getQuestion(position));
+                adapter.notifyDataSetChanged();
                 listView.setAdapter(adapter);
             }
         });
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(Data.getQuestion().size() == 0){
+            Data.InitQuestions();
+        }
+        QuestionAdapter adapter = new QuestionAdapter(Data.getQuestion());
+        ListView listView = findViewById(R.id.F5list_question);
+        listView.setAdapter(adapter);
+
     }
     void InitName(){
         nameTitles = new ArrayList<String>();

@@ -51,7 +51,12 @@ public class Frame3 extends AppCompatActivity {
                         }
                     if (index == q.getKey()) {
                         score += (lv + 1);
-                        NewQuestion();
+                        if(!NewQuestion()){
+                            NextFrame4();
+                            //((RadioGroup) findViewById(R.id.F3rdiGroup)).clearCheck();
+                        }
+                        //((RadioButton)findViewById(keyCodeAnswers[0])).setChecked(false);
+
                         //Toast.makeText(Frame3.this, "Dung", Toast.LENGTH_LONG).show();
                     } else {
                         NextFrame4();
@@ -68,10 +73,13 @@ public class Frame3 extends AppCompatActivity {
         q = questions.get(0);
         questions.remove(0);
         ((TextView)findViewById(R.id.F3txtQuestion)).setText(q.getQuestion());
-        for(int i=0; i<4; i++){
-            ((RadioButton)findViewById(keyCodeAnswers[i])).setText(q.getAnswer(i));
-            ((RadioButton)findViewById(keyCodeAnswers[i])).setChecked(false);
+        for(int i=0; i<4; i++) {
+            RadioButton radioButton = findViewById(keyCodeAnswers[i]);
+            radioButton.setText(q.getAnswer(i));
+            //radioButton.setChecked(false);
         }
+        ((RadioButton)findViewById(keyCodeAnswers[0])).setChecked(true);
+
         return true;
     }
     void SetSize(){
