@@ -14,10 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+
         android:layout_weight="20"
         android:text="Số câu trả lời đúng"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <TextView
@@ -25,11 +25,11 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+
         android:layout_weight="30"
         android:text="12"
         android:textColor="#0038ff"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+
         android:layout_weight="20"
         android:text="Chia sẻ thành tích" />
 

@@ -10,24 +10,32 @@
     android:gravity="center_horizontal"
     tools:context=".Frame2">
 
-    <TextView
-        android:id="@+id/F2txtV1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:gravity="center"
-        android:text="Total Score"
-        android:textSize="25sp"
-        android:textStyle="bold" />
-    <TextView
-        android:id="@+id/F2txtTotalScore"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="9"
-        android:textSize="25sp"
-        android:gravity="center"
-        android:text="200 pts"
-        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/F2txtV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="Total Score: "
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/F2txtTotalScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="200 pts"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
 
     <ListView
         android:id="@+id/F2list_subject"
@@ -35,16 +43,16 @@
         android:layout_height="0dp"
         android:layout_marginStart="20sp"
         android:layout_marginEnd="20sp"
-        android:layout_weight="50"></ListView>
+        android:layout_weight="65"></ListView>
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/F2swCDK"
         android:layout_width="215dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_weight="15"
+        android:layout_marginTop="10dp"
+        android:layout_weight="10"
         android:text="Cấp độ khó"
-        android:textSize="25sp"
+        android:textSize="15sp"
         android:textStyle="bold"></com.google.android.material.switchmaterial.SwitchMaterial>
 
 
@@ -52,9 +60,9 @@
         android:id="@+id/F2btnNext"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="12"
+        android:layout_weight="15"
         android:text="Danh sách câu hỏi"
 
-        android:textSize="12sp" />
+        android:textSize="10sp" />
 
 </LinearLayout>

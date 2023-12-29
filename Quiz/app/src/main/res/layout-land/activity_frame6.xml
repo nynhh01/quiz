@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
+
     android:padding="30dp"
     android:gravity="center"
     android:background="#f7f2fa"
@@ -18,7 +18,7 @@
         android:gravity="center_horizontal"
         android:text="Thuỷ phân este X trong môi trường axit thu được hai chất hữu cơ Y và Z. "
         android:textColor="#000"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <Button
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#00BCD4"
         android:clickable="false"
         android:text="Khó" />
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:weightSum="100">
+        >
 
         <TextView
             android:id="@+id/F6txtAnswer1"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7sp"
             android:text="Cau tra loi 1"
-            android:textSize="20sp"></TextView>
+            android:textSize="15sp"></TextView>
 
         <TextView
             android:id="@+id/F6txtAnswer2"
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7sp"
             android:text="Cau tra loi 1"
-            android:textSize="20sp"></TextView>
+            android:textSize="15sp"></TextView>
 
         <TextView
             android:id="@+id/F6txtAnswer3"
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7sp"
             android:text="Cau tra loi 1"
-            android:textSize="20sp"></TextView>
+            android:textSize="15sp"></TextView>
 
         <TextView
             android:id="@+id/F6txtAnswer4"
@@ -67,13 +67,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7sp"
             android:text="Cau tra loi 1"
-            android:textSize="20sp"></TextView>
+            android:textSize="15sp"></TextView>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_marginTop="10dp"
 
         android:gravity="center"
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:text="Đáp án đúng: "
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
         <TextView
             android:id="@+id/F6txtKey"
@@ -92,7 +92,7 @@
             android:layout_height="wrap_content"
             android:text="isopropyl propionat"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             />
     </LinearLayout>

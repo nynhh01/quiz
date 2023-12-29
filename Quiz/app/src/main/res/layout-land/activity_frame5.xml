@@ -11,7 +11,7 @@
     tools:context=".Frame5">
 
     <LinearLayout
-        android:layout_marginTop="10dp"
+
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="15"
@@ -19,12 +19,11 @@
         >
         <TextView
             android:id="@+id/F5txt1"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chủ đề"
-            android:layout_weight="30"
-            android:layout_marginRight="10dp"
-            android:textSize="25sp"
+            android:layout_marginRight="30dp"
+            android:textSize="20sp"
             android:textColor="#000"
 
             />
@@ -38,7 +37,7 @@
             <AutoCompleteTextView
                 android:id="@+id/F5txtView2"
                 android:layout_width="match_parent"
-                android:layout_height="63dp" />
+                android:layout_height="match_parent" />
 
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
