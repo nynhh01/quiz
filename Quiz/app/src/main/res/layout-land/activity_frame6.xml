@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:padding="30dp"
+    android:gravity="center"
+    android:background="#f7f2fa"
+    tools:context=".Frame6">
+
+    <TextView
+        android:id="@+id/F6txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Thuỷ phân este X trong môi trường axit thu được hai chất hữu cơ Y và Z. "
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/F6btnLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00BCD4"
+        android:clickable="false"
+        android:text="Khó" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/F6txtAnswer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7sp"
+            android:text="Cau tra loi 1"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/F6txtAnswer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7sp"
+            android:text="Cau tra loi 1"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/F6txtAnswer3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7sp"
+            android:text="Cau tra loi 1"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/F6txtAnswer4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7sp"
+            android:text="Cau tra loi 1"
+            android:textSize="20sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:gravity="center"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đáp án đúng: "
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/F6txtKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="isopropyl propionat"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

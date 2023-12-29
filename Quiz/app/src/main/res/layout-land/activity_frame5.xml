@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f2fa"
+    android:padding="30dp"
+    android:weightSum="100"
+    tools:context=".Frame5">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/F5txt1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Chủ đề"
+            android:layout_weight="30"
+            android:layout_marginRight="10dp"
+            android:textSize="25sp"
+            android:textColor="#000"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/F5txtInputField"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70">
+
+            <AutoCompleteTextView
+                android:id="@+id/F5txtView2"
+                android:layout_width="match_parent"
+                android:layout_height="63dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:id="@+id/F5list_question"
+        android:layout_marginTop="40dp"
+        >
+    </ListView>
+
+
+</LinearLayout>
