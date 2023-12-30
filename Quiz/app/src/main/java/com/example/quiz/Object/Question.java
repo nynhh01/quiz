@@ -10,15 +10,16 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class Question {
-    String id;
-    String question;
-    ArrayList<String> answers;
-    int key;
-    int level;
-    int theme;
+    String id; // mã câu hỏi
+    String question; // câu hỏi
+    ArrayList<String> answers; // danh sách đáp án
+    int key; //viji tri đáp án
+    int level; // muc do
+    int theme; // chu de
     public Question(){
         this.id = "";
         this.question = "";
+        answers = new ArrayList<String>();
         this.answers.add("");
         this.answers.add("");
         this.answers.add("");
@@ -90,8 +91,8 @@ public class Question {
         return value == key;
     }
     public void randomAnswer(){
-        String stringResult = answers.get(key);
-        Collections.shuffle(answers);
-        key = answers.indexOf(stringResult);
+        String stringResult = answers.get(key); // lấy chuỗi đáp án
+        Collections.shuffle(answers); // trộn đáp án
+        key = answers.indexOf(stringResult); // trả về vị trí mới
     }
 }

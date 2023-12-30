@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class Theme {
     String id;
-    int picture;
-    String name;
-    String information;
-    ArrayList<Question> questions;
+    int picture; // id anh tuong ung
+    String name; // ten chu de
+    String information; // thong tin
+    ArrayList<Question> questions; // danh sach cau hoi
 
     public Theme(String id, int picture, String name, String information) {
         this.id = id;

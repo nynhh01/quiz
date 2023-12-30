@@ -8,19 +8,19 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Data {
-    static ArrayList<Question> listQuestion;
-    static ArrayList<Theme> listTheme;
-    static int numberTheme;
-    static int totalScore;
-    static int start = 0;
+    static ArrayList<Question> listQuestion; // danh sách câu hỏi
+    static ArrayList<Theme> listTheme; // chia câu hỏi theo chủ đề
+    static int numberTheme; // so luong chu de khoi tao
+    static int totalScore; // tong diem
+    static int start = 0; // bien kiem tra bat dau
     public static void InitQuestions() {
-        totalScore = 0;
         InitQuestions(0); // Gọi phương thức với giá trị mặc định là 0
     }
     public static void InitQuestions(int type){
-        if(start == 1 && type == 0) return;
-        start = 1;
+        if(start == 1 && type == 0) return; // TH da bat dau ma khoi tao lai thi khong khoi tao
+        start = 1; // da bat dau
         listQuestion = new ArrayList<Question>();
+        totalScore = 0;
 
         // Dia ly
         int id = 0;
@@ -165,7 +165,7 @@ public class Data {
         numberTheme = theme + 1;
         InitTheme();
     }
-    static void InitTheme(){
+    static void InitTheme(){ // phân dữ liệu vào danh các chủ đề
         listTheme = new ArrayList<Theme>();
         int[] idPictures = {R.drawable.img_dia_ly, R.drawable.img_khoa_hoc, R.drawable.img_lich_su, R.drawable.img_tieng_anh};
         String[] nameTheme = {"Địa lý", "Khoa học", "Lịch sử", "Tiếng Anh"};
@@ -178,7 +178,7 @@ public class Data {
         for(int i = 0; i < numberTheme; i++){
             listTheme.add(new Theme(NewId("ID_THEME", i), idPictures[i], nameTheme[i], informationsTheme[i]));
         }
-        for(int i =0; i< listQuestion.size(); i++){
+        for(int i =0; i< listQuestion.size(); i++){ // thêm theo chủ đề
             listTheme.get(listQuestion.get(i).getTheme()).addQuestion(listQuestion.get(i));
         }
     }
@@ -189,7 +189,7 @@ public class Data {
         for(Question i : data)
             if(i.getLevel() == lv){
                 result.add(i);
-                result.get(result.size() - 1).randomAnswer();
+                result.get(result.size() - 1).randomAnswer(); // trộn đáp án
             }
         // trộn ngẫu nhiên các phàn tử trong mảng result
         Collections.shuffle(result);
@@ -201,7 +201,7 @@ public class Data {
     public static ArrayList<Question> getQuestion(int type){
         return listTheme.get(type).getQuestions();
     }
-    public static Question findQuestion(String id){
+    public static Question findQuestion(String id){ // tìm kiếm câu hỏi theo id
         for(int i = 0; i<listQuestion.size(); i++)
             if(listQuestion.get(i).getId().equals(id))
                 return listQuestion.get(i);
